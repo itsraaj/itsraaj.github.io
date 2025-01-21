@@ -28,6 +28,11 @@ theme_color: black
 remote_theme: broccolini/swiss
 plugins:
   - jekyll-remote-theme
+  - jekyll-sass-converter # Ensure SCSS files are processed into CSS
+
+# Sass settings
+sass:
+  style: compressed # Compress the CSS output (optional)
 
 # Build settings
 markdown: kramdown
