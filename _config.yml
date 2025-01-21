@@ -33,3 +33,6 @@ plugins:
 
 # Build settings
 markdown: kramdown
+
+social_link: YouTube
+social_username: ""
