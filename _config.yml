@@ -24,12 +24,9 @@ github_username: itsraaj
 # Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
 theme_color: black
 
-# Remote theme settings
-remote_theme: broccolini/swiss
-
 # Plugins
 plugins:
-  - jekyll-remote-theme
+  - jekyll-swiss
 
 # Build settings
 markdown: kramdown
