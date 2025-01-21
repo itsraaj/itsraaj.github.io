@@ -16,7 +16,7 @@
 title: Swiss Jekyll Theme
 description: A bold typographic theme inspired by Swiss design.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.raaj.blog" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://raaj.blog" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: itsraaj.github.io # the GitHub repo name for your project
 github_username: itsraaj
 
