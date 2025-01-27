@@ -4,9 +4,5 @@ title: Home
 ---
 
 ### Hey, I'm Raaj. Not sure how you found this place but welcome.
-### Writing stuff on here helps me process the world. 
+### I use this place to [yap](/musings) into the ether and share my attempts to write [poetry](/poems).
 ### Sometimes I practice medicine.
-
-## Explore:
-- [Poems](/poems)
-- [Musings](/musings)
