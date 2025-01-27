@@ -101,14 +101,13 @@ article {
 /* Main Content Styling */
 main {
   flex: 1; /* Allow the main content to grow as needed */
-  padding: 1rem; /* Internal spacing */
-  text-align: left; /* Left-align text */
-  max-width: 800px; /* Keep content width bounded */
-  margin: 0 auto; /* Visually center the container horizontally */
-  padding-bottom: 10rem; /* Ensure enough space for the fixed footer */
+  padding: 1rem; /* Consistent padding */
+  text-align: left; /* Ensure all text is left-aligned */
+  max-width: 800px; /* Limit width for aesthetics */
+  margin: 0 auto; /* Center horizontally */
+  padding-bottom: calc(3rem + 1rem); /* Footer height (3rem) + some extra padding */
 }
 
-/* Footer Styling */
 footer {
   position: fixed; /* Fix the footer at the bottom */
   bottom: 0; /* Stick to the bottom of the viewport */
@@ -120,6 +119,8 @@ footer {
   text-align: left; /* Keep the footer text left-aligned */
   max-width: 800px; /* Keep the footer's width consistent with the main content */
   margin: 0 auto; /* Center the footer container horizontally */
+  z-index: 10; /* Ensure the footer stays on top of content */
+  height: 3rem; /* Footer height */
 }
 
 footer a {
