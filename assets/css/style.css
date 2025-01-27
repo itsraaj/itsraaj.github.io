@@ -94,12 +94,17 @@ p {
   margin-bottom: 1rem;
 }
 
+article {
+  margin-bottom: 2rem;
+}
+
 main {
-  flex: 1; /* Fills the available space */
+  flex: 1; /* Fills available space between header (if any) and footer */
   padding: 1rem; /* Consistent padding */
   text-align: left; /* Ensure all text is left-aligned */
+  width: 100%;
   max-width: 800px; /* Center content width */
-  margin: 0 auto; 
+  margin: 0 auto; /* Center horizontally */
 }
 
 footer {
@@ -107,8 +112,9 @@ footer {
   background: #073642; /* Footer background */
   color: #839496; /* Footer text color */
   text-align: left; /* Ensure footer text is left-aligned */
+  width: 100%;
   max-width: 800px; /* Align with main content width */
-  margin: 0 auto;
+  margin: 0 auto; /* Center horizontally */
 }
 
 footer a {
@@ -122,6 +128,10 @@ footer a:hover {
 
 /* Accessibility Enhancements */
 a:focus {
+  outline: 2px dashed #268bd2;
+}
+
+button:focus {
   outline: 2px dashed #268bd2;
 }
 
