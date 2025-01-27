@@ -1,0 +1,163 @@
+/* General Reset */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, figure {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Font Import */
+  @font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('/assets/fonts/woff2/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'),
+         url('/assets/fonts/woff/Atkinson-Hyperlegible-Regular-102.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('/assets/fonts/woff2/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
+         url('/assets/fonts/woff/Atkinson-Hyperlegible-Italic-102.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('/assets/fonts/woff2/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'),
+         url('/assets/fonts/woff/Atkinson-Hyperlegible-Bold-102.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('/assets/fonts/woff2/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'),
+         url('/assets/fonts/woff/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+    background-color: #002b36; /* Solarized Dark background */
+    color: #839496; /* Solarized main text */
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  a {
+    color: #268bd2; /* Solarized blue for links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #b58900; /* Solarized yellow for hover */
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: #073642; /* Slightly darker than the background */
+    color: #93a1a1; /* Solarized secondary text */
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  header h1 a {
+    color: #b58900; /* Solarized yellow */
+    text-decoration: none;
+  }
+  
+  header h1 a:hover {
+    color: #268bd2;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+    color: #b58900; /* Solarized yellow */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 2.6rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Layout */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  article {
+    margin-bottom: 2rem;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #073642;
+    color: #93a1a1;
+  }
+  
+  /* Code Styling */
+  pre, code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #073642;
+    color: #93a1a1;
+    padding: 0.5rem;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  pre {
+    margin: 1rem 0;
+  }
+  
+  blockquote {
+    border-left: 4px solid #b58900;
+    padding-left: 1rem;
+    color: #93a1a1;
+    font-style: italic;
+  }
+  
+  /* Lists */
+  ul, ol {
+    padding-left: 2rem;
+  }
+  
+  ul li, ol li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Accessibility Enhancements */
+  a:focus {
+    outline: 2px dashed #268bd2;
+  }
+  
+  button:focus {
+    outline: 2px dashed #268bd2;
+  }
+  
