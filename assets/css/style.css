@@ -99,23 +99,22 @@ article {
 }
 
 main {
-  flex: 1; /* Push the footer down */
-  padding: 1rem; /* Add consistent padding */
+  flex: 1; /* Fills available space between header (if any) and footer */
+  padding: 1rem; /* Consistent padding */
   text-align: left; /* Ensure all text is left-aligned */
-  margin: 0 auto; /* Center main content horizontally */
-  width: 100%; /* Ensure the content spans the available width */
-  max-width: 800px; /* Add a readable content width */
+  width: 100%;
+  max-width: 800px; /* Center content width */
+  margin: 0 auto; /* Center horizontally */
 }
 
-/* Footer */
 footer {
-  padding: 1rem; /* Matches main content padding */
+  padding: 1rem;
   background: #073642; /* Footer background */
   color: #839496; /* Footer text color */
   text-align: left; /* Ensure footer text is left-aligned */
-  width: 100%; /* Footer spans the full width */
-  max-width: 800px; /* Match main content width for alignment */
-  margin: 0 auto; /* Align footer with content horizontally */
+  width: 100%;
+  max-width: 800px; /* Align with main content width */
+  margin: 0 auto; /* Center horizontally */
 }
 
 footer a {
@@ -127,16 +126,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Force Footer to Stay at Bottom */
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Accessibility Enhancements */
 a:focus {
   outline: 2px dashed #268bd2;
@@ -146,10 +135,10 @@ button:focus {
   outline: 2px dashed #268bd2;
 }
 
-/* Media Queries */
+/* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
   main, footer {
-    padding: 1rem; /* Maintain consistent padding on smaller screens */
-    max-width: 100%; /* Full width for small devices */
+    max-width: 100%; /* Full width on small screens */
+    padding: 1rem; /* Maintain padding */
   }
 }
