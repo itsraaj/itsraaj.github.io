@@ -98,23 +98,27 @@ article {
   margin-bottom: 2rem;
 }
 
+/* Main Content Styling */
 main {
-  flex: 1; /* Fills available space between header (if any) and footer */
-  padding: 1rem; /* Consistent padding */
-  text-align: left; /* Ensure all text is left-aligned */
-  width: 100%;
-  max-width: 800px; /* Center content width */
-  margin: 0 auto; /* Center horizontally */
+  flex: 1; /* Allow the main content to grow as needed */
+  padding: 1rem; /* Internal spacing */
+  text-align: left; /* Left-align text */
+  max-width: 800px; /* Keep content width bounded */
+  margin: 0 auto; /* Visually center the container horizontally */
 }
 
+/* Footer Styling */
 footer {
-  padding: 1rem;
+  position: fixed; /* Fix the footer at the bottom */
+  bottom: 0; /* Stick to the bottom of the viewport */
+  left: 0;
+  right: 0;
+  padding: 1rem; /* Padding inside the footer */
   background: #073642; /* Footer background */
   color: #839496; /* Footer text color */
-  text-align: left; /* Ensure footer text is left-aligned */
-  width: 100%;
-  max-width: 800px; /* Align with main content width */
-  margin: 0 auto; /* Center horizontally */
+  text-align: left; /* Keep the footer text left-aligned */
+  max-width: 800px; /* Keep the footer's width consistent with the main content */
+  margin: 0 auto; /* Center the footer container horizontally */
 }
 
 footer a {
