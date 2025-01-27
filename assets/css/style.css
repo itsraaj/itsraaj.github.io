@@ -66,13 +66,6 @@ body {
   padding: 1rem;
 }
 
-/* Main Content */
-main {
-  flex: 1; /* Pushes the footer to the bottom if there's not enough content */
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 a {
   color: #268bd2; /* Solarized blue for links */
   text-decoration: none;
@@ -112,14 +105,23 @@ article {
   margin-bottom: 2rem;
 }
 
+/* Main Content */
+main {
+  flex: 1;
+  max-width: 800px;
+  padding: 1rem; /* Consistent padding */
+  margin: 0 auto; /* Center horizontally within viewport */
+  text-align: left; /* Explicitly left-align all content */
+}
+
 /* Footer */
 footer {
+  padding: 1rem; /* Matches main content padding */
+  margin: 0 auto; /* Align with main content */
   background: #073642;
   color: #839496;
-  text-align: left;
-  padding: 1rem;
-  font-size: 0.9rem;
-  width: 100%;
+  text-align: left; /* Align footer text to the left */
+  max-width: 800px; /* Align with main content width */
 }
 
 footer a {
@@ -131,9 +133,16 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Utility: Viewport Footer Alignment */
+body > *:not(footer) {
+  flex: 1; /* Push footer to bottom of viewport */
+}
+
+/* Media Query for Smaller Screens */
 @media (max-width: 768px) {
-  footer {
-    padding: 1rem;
+  main, footer {
+    max-width: 100%; /* Use full width on smaller devices */
+    padding: 1rem; /* Maintain consistent padding */
   }
 }
 
