@@ -14,7 +14,7 @@ html, body {
   height: 100%; /* Ensure the body takes full height of the viewport */
   margin: 0;
   display: flex;
-  flex-direction: column; /* Flex layout for footer placement */
+  flex-direction: column; /* Flex layout to push footer */
 }
 
 /* Font Import */
@@ -56,7 +56,7 @@ body {
   background-color: #002b36; /* Solarized Dark background */
   color: #839496; /* Solarized main text */
   margin: 0;
-  padding: 1rem;
+  padding: 0;
 }
 
 a {
@@ -99,18 +99,23 @@ article {
 }
 
 main {
-  flex: 1; /* Allow main content to expand and push the footer */
-  padding: 1rem; /* Add 1rem padding for consistent spacing */
+  flex: 1; /* Push the footer down */
+  padding: 1rem; /* Add consistent padding */
   text-align: left; /* Ensure all text is left-aligned */
-  margin: 0; /* Remove margin that could center it unexpectedly */
+  margin: 0 auto; /* Center main content horizontally */
+  width: 100%; /* Ensure the content spans the available width */
+  max-width: 800px; /* Add a readable content width */
 }
 
+/* Footer */
 footer {
   padding: 1rem; /* Matches main content padding */
   background: #073642; /* Footer background */
   color: #839496; /* Footer text color */
-  text-align: left; /* Left-align footer text */
-  width: 100%; /* Span full width */
+  text-align: left; /* Ensure footer text is left-aligned */
+  width: 100%; /* Footer spans the full width */
+  max-width: 800px; /* Match main content width for alignment */
+  margin: 0 auto; /* Align footer with content horizontally */
 }
 
 footer a {
@@ -120,6 +125,24 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Force Footer to Stay at Bottom */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto; /* Allow main content to grow */
+}
+
+footer {
+  flex-shrink: 0; /* Prevent footer from collapsing */
 }
 
 /* Accessibility Enhancements */
@@ -135,5 +158,6 @@ button:focus {
 @media (max-width: 768px) {
   main, footer {
     padding: 1rem; /* Maintain consistent padding on smaller screens */
+    max-width: 100%; /* Full width for small devices */
   }
 }
