@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Musings
+permalink: /musings/
 ---
 
 # Musings
