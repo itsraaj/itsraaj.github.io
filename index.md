@@ -1,16 +1,12 @@
 ---
 layout: default
-title: Welcome
+title: Home
 ---
 
-# Welcome to {{ site.title }}
-{{ site.description }}
+# Welcome to My Blog
 
-## Recent Posts
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+A personal space for poems, musings, and projects.
+
+## Explore:
+- [Poems](/poems)
+- [Musings](/musings)
