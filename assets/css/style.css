@@ -59,14 +59,6 @@ body {
   padding: 0;
 }
 
-.page-wrapper {
-  flex: 1; /* Push footer to the bottom when content is sparse */
-  padding: 1rem; /* Consistent padding */
-  text-align: left; /* Left-align all content */
-  max-width: 800px; /* Keep content width consistent */
-  margin: 0 auto; /* Center the content within the viewport */
-}
-
 a {
   color: #268bd2; /* Solarized blue for links */
   text-decoration: none;
@@ -106,13 +98,18 @@ article {
   margin-bottom: 2rem;
 }
 
-/* Footer */
+main {
+  flex: 1; /* Allow main content to expand and push the footer */
+  padding: 1rem; /* Add 1rem padding for consistent spacing */
+  text-align: left; /* Ensure all text is left-aligned */
+  margin: 0; /* Remove margin that could center it unexpectedly */
+}
+
 footer {
   padding: 1rem; /* Matches main content padding */
-  background: #073642; /* Footer background color */
+  background: #073642; /* Footer background */
   color: #839496; /* Footer text color */
-  text-align: left; /* Align footer text to the left */
-  max-width: 800px; /* Align with main content width */
+  text-align: left; /* Left-align footer text */
 }
 
 footer a {
@@ -122,19 +119,6 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
-
-/* Utility: Viewport Footer Alignment */
-body > *:not(footer) {
-  flex: 1; /* Push footer to bottom of viewport */
-}
-
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-  .page-wrapper, footer {
-    max-width: 100%; /* Use full width on smaller devices */
-    padding: 1rem; /* Maintain consistent padding */
-  }
 }
 
 /* Code Styling */
