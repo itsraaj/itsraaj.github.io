@@ -3,9 +3,7 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Blog
-
-A personal space for poems, musings, and projects.
+### Hey, I'm Raaj. Not sure how you found this place but welcone. I like sports. Writing stuff on here helps me process the world. Sometimes I practice medicine.
 
 ## Explore:
 - [Poems](/poems)
