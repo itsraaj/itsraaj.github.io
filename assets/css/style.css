@@ -69,48 +69,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header Styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  background-color: #073642; /* Slightly darker than the background */
-  padding: 1rem 2rem;
-  margin-bottom: 1.5rem;
-}
-
-header .homepage-link {
-  color: #93a1a1; /* Subtle accent for the homepage link */
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-header .homepage-link:hover {
-  color: #b58900; /* Highlighted hover effect */
-}
-
-header ul.nav-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header ul.nav-links li {
-  margin: 0 1rem;
-}
-
-header ul.nav-links li a {
-  color: #b58900; /* Solarized yellow for links */
-  font-weight: bold;
-}
-
-header ul.nav-links li a:hover {
-  color: #268bd2; /* Solarized blue for hover */
-}
-
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
@@ -149,12 +107,14 @@ article {
 }
 
 footer {
-  max-width: 800px; /* Match the main content width */
+  max-width: 800px; /* Matches the width of the main content */
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 1.5rem; /* Added some padding for spacing */
   background: #073642; /* Footer background color */
-  color: #6c757d; /* Footer text color */
+  color: #839496; /* Footer text color to match the main text */
   text-align: left; /* Align text to the left */
+  font-size: 0.9rem; /* Adjusted size for better readability */
+  line-height: 1.5; /* Improved text spacing */
 }
 
 footer a {
