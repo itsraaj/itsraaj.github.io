@@ -64,7 +64,7 @@ body {
   padding: 1rem; /* Consistent padding */
   text-align: left; /* Left-align all content */
   max-width: 800px; /* Keep content width consistent */
-  margin: 0; /* Center the content within the viewport */
+  margin: 0 auto; /* Center the content within the viewport */
 }
 
 a {
