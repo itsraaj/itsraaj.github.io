@@ -1,9 +1,24 @@
-<header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/poems/">Poems</a></li>
-        <li><a href="/musings/">Musings</a></li>
-      </ul>
-    </nav>
-  </header>  
+<header class="border-bottom-thick px-2 clearfix">
+  <div class="left sm-width-full py-1 mt-1 mt-lg-0">
+    {% for my_page in site.pages %}
+      {% if my_page.url == "/" %}
+        <a class="align-middle link-primary text-accent homepage-link" href="{{ site.baseurl }}/">
+          {{ site.title }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="right sm-width-full">
+    <ul class="list-reset mt-lg-1 mb-2 mb-lg-1 nav-links">
+      {% for my_page in site.pages %}
+        {% if my_page.title and my_page.url != "/" %}
+          <li class="inline-block">
+            <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="{{ my_page.url | prepend: site.baseurl }}">
+              {{ my_page.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</header>
