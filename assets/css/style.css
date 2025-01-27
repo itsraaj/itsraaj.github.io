@@ -120,7 +120,6 @@ footer {
   text-align: left; /* Keep the footer text left-aligned */
   max-width: 800px; /* Keep the footer's width consistent with the main content */
   margin: 0 auto; /* Center the footer container horizontally */
-  z-index: 10; /* Ensure the footer stays on top of content */
 }
 
 footer a {
