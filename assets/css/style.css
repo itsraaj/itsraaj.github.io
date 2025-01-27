@@ -64,7 +64,7 @@ body {
   padding: 1rem; /* Consistent padding */
   text-align: left; /* Left-align all content */
   max-width: 800px; /* Keep content width consistent */
-  margin: 0 auto; /* Center the content within the viewport */
+  margin: 0; /* Center the content within the viewport */
 }
 
 a {
@@ -113,7 +113,6 @@ footer {
   color: #839496; /* Footer text color */
   text-align: left; /* Align footer text to the left */
   max-width: 800px; /* Align with main content width */
-  margin: 0 auto; /* Keep consistent alignment */
 }
 
 footer a {
