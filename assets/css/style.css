@@ -10,6 +10,13 @@ html {
   line-height: 1.5;
 }
 
+html, body {
+  height: 100%; /* Ensure the body takes full height of the viewport */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Font Import */
 @font-face {
   font-family: 'Atkinson Hyperlegible';
@@ -142,13 +149,12 @@ article {
 }
 
 footer {
-  margin-top: 40px;
-  font-size: 0.9em;
-  text-align: left;
+  max-width: 800px; /* Match the main content width */
+  margin: 0 auto;
   padding: 1rem;
-  margin: 0;
-  background: #073642;
-  color: #6c757d;
+  background: #073642; /* Footer background color */
+  color: #6c757d; /* Footer text color */
+  text-align: left; /* Align text to the left */
 }
 
 footer a {
@@ -197,4 +203,11 @@ a:focus {
 
 button:focus {
   outline: 2px dashed #268bd2;
+}
+
+@media (max-width: 768px) {
+  footer {
+    max-width: 100%; /* Allow footer to span the width of smaller devices */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
 }
