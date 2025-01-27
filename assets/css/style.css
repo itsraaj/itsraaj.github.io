@@ -96,8 +96,7 @@ p {
 
 /* Layout */
 main {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 100%; /* Full-width content */
   padding: 1rem;
   flex: 1;
 }
@@ -106,12 +105,12 @@ article {
   margin-bottom: 2rem;
 }
 
+/* Footer */
 footer {
-  max-width: 800px; /* Matches the width of the main content */
-  margin: 0 auto;
-  padding: 1rem 1.5rem; /* Added some padding for spacing */
+  width: 100%; /* Ensure the footer spans the full width */
+  padding: 1rem; /* Consistent padding */
   background: #073642; /* Footer background color */
-  color: #839496; /* Footer text color to match the main text */
+  color: #839496; /* Footer text color */
   text-align: left; /* Align text to the left */
   font-size: 0.9rem; /* Adjusted size for better readability */
   line-height: 1.5; /* Improved text spacing */
@@ -167,7 +166,6 @@ button:focus {
 
 @media (max-width: 768px) {
   footer {
-    max-width: 100%; /* Allow footer to span the width of smaller devices */
     padding: 1rem; /* Adjust padding for smaller screens */
   }
 }
