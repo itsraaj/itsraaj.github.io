@@ -137,14 +137,6 @@ body {
   flex-direction: column;
 }
 
-main {
-  flex: 1 0 auto; /* Allow main content to grow */
-}
-
-footer {
-  flex-shrink: 0; /* Prevent footer from collapsing */
-}
-
 /* Accessibility Enhancements */
 a:focus {
   outline: 2px dashed #268bd2;
