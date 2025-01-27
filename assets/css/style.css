@@ -148,3 +148,7 @@ button:focus {
     padding: 1rem; /* Maintain padding */
   }
 }
+/* Utility Class for Spacing Adjustment */
+.spacer {
+  height: 3rem; /* Adjust spacer height based on footer height */
+}
