@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sample Musing
-date: 2025-01-28
+date: 2025-01-26
 categories: musings
 ---
 
