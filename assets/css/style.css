@@ -55,8 +55,22 @@ body {
   font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
   background-color: #002b36; /* Solarized Dark background */
   color: #839496; /* Solarized main text */
-  padding: 1rem;
+  padding: 0; /* Remove default body padding */
   margin: 0;
+}
+
+.page-wrapper {
+  flex: 1; /* Ensures the main content area stretches to fill the viewport */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Main Content */
+main {
+  flex: 1; /* Pushes the footer to the bottom if there's not enough content */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 a {
@@ -94,26 +108,18 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Layout */
-main {
-  max-width: 100%; /* Full-width content */
-  padding: 1rem;
-  flex: 1;
-}
-
 article {
   margin-bottom: 2rem;
 }
 
 /* Footer */
 footer {
-  width: 100%; /* Ensure the footer spans the full width */
-  padding: 1rem; /* Consistent padding */
-  background: #073642; /* Footer background color */
-  color: #839496; /* Footer text color */
-  text-align: left; /* Align text to the left */
-  font-size: 0.9rem; /* Adjusted size for better readability */
-  line-height: 1.5; /* Improved text spacing */
+  background: #073642;
+  color: #839496;
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.9rem;
+  width: 100%;
 }
 
 footer a {
@@ -123,6 +129,12 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 1rem;
+  }
 }
 
 /* Code Styling */
@@ -162,10 +174,4 @@ a:focus {
 
 button:focus {
   outline: 2px dashed #268bd2;
-}
-
-@media (max-width: 768px) {
-  footer {
-    padding: 1rem; /* Adjust padding for smaller screens */
-  }
 }
