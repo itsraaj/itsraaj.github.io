@@ -103,6 +103,7 @@ main {
   padding: 1rem; /* Add 1rem padding for consistent spacing */
   text-align: left; /* Ensure all text is left-aligned */
   margin: 0; /* Remove margin that could center it unexpectedly */
+  display: block; /* Reset potential flexbox behaviors */
 }
 
 footer {
@@ -110,6 +111,7 @@ footer {
   background: #073642; /* Footer background */
   color: #839496; /* Footer text color */
   text-align: left; /* Left-align footer text */
+  width: 100%; /* Span full width */
 }
 
 footer a {
@@ -121,32 +123,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Code Styling */
-pre, code {
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #073642;
-  color: #93a1a1;
-  padding: 0.5rem;
-  border-radius: 5px;
-  overflow-x: auto;
-}
-
-blockquote {
-  border-left: 4px solid #b58900;
-  padding-left: 1rem;
-  color: #93a1a1;
-  font-style: italic;
-}
-
-/* Lists */
-ul, ol {
-  padding-left: 2rem;
-}
-
-ul li, ol li {
-  margin-bottom: 0.5rem;
-}
-
 /* Accessibility Enhancements */
 a:focus {
   outline: 2px dashed #268bd2;
@@ -154,4 +130,11 @@ a:focus {
 
 button:focus {
   outline: 2px dashed #268bd2;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  main, footer {
+    padding: 1rem; /* Maintain consistent padding on smaller screens */
+  }
 }
