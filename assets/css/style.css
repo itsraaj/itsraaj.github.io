@@ -105,7 +105,7 @@ main {
   text-align: left; /* Left-align text */
   max-width: 800px; /* Keep content width bounded */
   margin: 0 auto; /* Visually center the container horizontally */
-  padding-bottom: 4rem; /* Ensure enough space for the fixed footer */
+  padding-bottom: 10rem; /* Ensure enough space for the fixed footer */
 }
 
 /* Footer Styling */
