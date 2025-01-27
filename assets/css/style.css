@@ -105,7 +105,7 @@ main {
   text-align: left; /* Ensure all text is left-aligned */
   max-width: 800px; /* Limit width for aesthetics */
   margin: 0 auto; /* Center horizontally */
-  padding-bottom: calc(3rem + 1rem); /* Footer height (3rem) + some extra padding */
+  padding-bottom: 4rem; /* Footer height (3rem) + some extra padding */
 }
 
 footer {
@@ -119,8 +119,7 @@ footer {
   text-align: left; /* Keep the footer text left-aligned */
   max-width: 800px; /* Keep the footer's width consistent with the main content */
   margin: 0 auto; /* Center the footer container horizontally */
-  z-index: 10; /* Ensure the footer stays on top of content */
-  height: 3rem; /* Footer height */
+  height: 2rem; /* Footer height */
 }
 
 footer a {
