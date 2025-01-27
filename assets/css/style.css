@@ -134,6 +134,7 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
+  flex: 1;
 }
 
 article {
@@ -143,8 +144,9 @@ article {
 footer {
   margin-top: 40px;
   font-size: 0.9em;
-  text-align: center;
-  padding: 20px 0;
+  text-align: left;
+  padding: 1rem;
+  margin: 0;
   background: #073642;
   color: #6c757d;
 }
