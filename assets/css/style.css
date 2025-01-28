@@ -162,4 +162,5 @@ button:focus {
 .top-spacer-default {
   height: 5rem; /* Adjust the height as needed */
   background-color: transparent; /* Keep it invisible or choose a color */
+  flex-shrink: 0; /* Prevents shrinking */
 }
