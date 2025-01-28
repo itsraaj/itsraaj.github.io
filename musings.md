@@ -6,8 +6,6 @@ permalink: /musings/
 
 # Musings
 
-Here are my musings:
-
 <ul>
 {% for post in site.posts %}
   {% if post.categories contains 'musings' %}

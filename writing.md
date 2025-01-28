@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Poems
-permalink: /poems/
+title: Writing
+permalink: /writing/
 ---
 
 # Poems
