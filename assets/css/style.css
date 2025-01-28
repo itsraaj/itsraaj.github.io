@@ -115,7 +115,7 @@ footer {
   right: 0;
   padding: 1rem; /* Padding inside the footer */
   background: #073642; /* Footer background */
-  color: #839496; /* Footer text color */
+  color: #586e75; /* Footer text color */
   text-align: left; /* Keep the footer text left-aligned */
   max-width: 800px; /* Keep the footer's width consistent with the main content */
   margin: 0 auto; /* Center the footer container horizontally */
