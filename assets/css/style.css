@@ -151,3 +151,9 @@ button:focus {
 .spacer {
   height: 3rem; /* Adjust spacer height based on footer height */
 }
+
+/* Top Spacer */
+.top-spacer {
+  height: 8rem; /* Adjust the height as needed */
+  background-color: transparent; /* Keep it invisible or choose a color */
+}
