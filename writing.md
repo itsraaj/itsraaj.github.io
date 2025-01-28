@@ -8,7 +8,7 @@ permalink: /writing/
 
 <ul>
 {% for post in site.posts %}
-  {% if post.categories contains 'poems' %}
+  {% if post.categories contains 'writing' %}
     <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%B %d, %Y" }})</li>
   {% endif %}
 {% endfor %}
