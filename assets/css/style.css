@@ -94,9 +94,6 @@ p {
   margin-bottom: 1rem;
 }
 
-article {
-  margin-bottom: 2rem;
-}
 
 /* Main Content Styling */
 main {
@@ -136,10 +133,6 @@ a:focus {
   outline: 2px dashed #268bd2;
 }
 
-button:focus {
-  outline: 2px dashed #268bd2;
-}
-
 /* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
   main, footer {
@@ -156,12 +149,11 @@ button:focus {
 .top-spacer-home {
   height: 8rem; /* Adjust the height as needed */
   background-color: transparent; /* Keep it invisible or choose a color */
-  flex-shrink: 0; /* Prevents shrinking */
 }
 
 /* Top Spacer */
 .top-spacer-default {
-  height: 5rem; /* Adjust the height as needed */
+  height: 4.1rem; /* Adjust the height as needed */
   background-color: transparent; /* Keep it invisible or choose a color */
   flex-shrink: 0; /* Prevents shrinking */
 }
