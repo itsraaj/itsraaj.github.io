@@ -4,9 +4,7 @@ title: Writing
 permalink: /writing/
 ---
 
-# Poems
-
-Here are my poems:
+# Writing
 
 <ul>
 {% for post in site.posts %}
