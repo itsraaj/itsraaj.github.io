@@ -164,3 +164,13 @@ button:focus {
   background-color: transparent; /* Keep it invisible or choose a color */
   flex-shrink: 0; /* Prevents shrinking */
 }
+
+ul {
+  padding-left: 0; /* Remove extra left padding */
+  list-style-type: none; /* Remove the bullet points */
+}
+
+li {
+  margin-bottom: 0.5rem; /* Add spacing between list items */
+  line-height: 1.5; /* Improve readability */
+}
