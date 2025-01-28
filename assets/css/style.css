@@ -146,19 +146,6 @@ button:focus {
     max-width: 100%; /* Full width on small screens */
     padding: 1rem; /* Maintain padding */
   }
-
-  /* Top Spacer */
-  .top-spacer-home {
-    height: 1rem; /* Adjust the height as needed */
-    background-color: transparent; /* Keep it invisible or choose a color */
-  }
-
-  /* Top Spacer */
-  .top-spacer-default {
-    height: 1rem; /* Adjust the height as needed */
-    background-color: transparent; /* Keep it invisible or choose a color */
-    flex-shrink: 0; /* Prevents shrinking */
-  }
 }
 /* Utility Class for Spacing Adjustment */
 .spacer {
