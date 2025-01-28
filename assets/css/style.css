@@ -153,7 +153,13 @@ button:focus {
 }
 
 /* Top Spacer */
-.top-spacer {
+.top-spacer-home {
   height: 8rem; /* Adjust the height as needed */
+  background-color: transparent; /* Keep it invisible or choose a color */
+}
+
+/* Top Spacer */
+.top-spacer-default {
+  height: 5rem; /* Adjust the height as needed */
   background-color: transparent; /* Keep it invisible or choose a color */
 }
